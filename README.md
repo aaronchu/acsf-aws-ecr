@@ -28,7 +28,7 @@ Using the module:
 
 ```
 module "static_website" {
-  source           = "git::https://github.com/aaronchu/acsf-aws-ecr.git"
+  source           = "git::https://github.com/aaronchu/acsf-aws-ecr.git?ref=v0.1.0"
   repo_name             = "my-repo"
   uploader_role_name    = "my-repo-uploader"
   uploader_user_arns    = [aws_iam_user.uploader-user.arn]
